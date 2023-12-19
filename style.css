@@ -1,0 +1,27 @@
+/* 
+    Theme Name: Cottage Retreat
+    Author: Shirleyrex
+    Version: 1.0
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+.button {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 15px 20px;
+  max-width: max-content;
+}
+.button::after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 18px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOCIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDI4IDEyIiBmaWxsPSJub25lIj48cGF0aCBpZD0iVmVjdG9yIDIwNyIgZD0iTTAgNkgyNi41TTI2LjUgNkwyMS41IDFNMjYuNSA2TDIxLjUgMTEiIHN0cm9rZT0iIzJFNDg0NSIvPjwvc3ZnPg==");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
