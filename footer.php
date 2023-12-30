@@ -12,15 +12,20 @@
   <div class="font-bold mb-10"><a href="/">COTTAGE RETREAT</a></div>
 
   <!-- Navigation Links -->
-  <nav class="">
-    <ul class="md:flex gap-6 font-light">
-      <li class="mb-5"><a href="#">Nav button 01</a></li>
-      <li class="mb-5"><a href="#">Nav button 02</a></li>
-      <li class="mb-5"><a href="#">Nav button 03</a></li>
-      <li class="md:hidden mb-5"><a href="#">Privacy</a></li>
-      <li class="md:hidden mb-5"><a href="#">Terms & Conditions</a></li>
-
-    </ul>
+  <nav class="hidden md:block">
+    <?php if (has_nav_menu('header-menu')): ?>
+      <?php wp_nav_menu(array(
+        'theme_location' => 'header-menu',
+        'container' => 'ul',
+        'menu_class' => 'flex font-light text-green-100 gap-6'
+      )); ?>
+    <?php else: ?>
+      <ul class="flex font-light text-green-100 gap-6">
+        <li><a href="#">Nav button 01</a></li>
+        <li><a href="#">Nav button 02</a></li>
+        <li><a href="#">Nav button 03</a></li>
+      </ul>
+    <?php endif; ?>
   </nav>
 </div>
 

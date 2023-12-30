@@ -9,6 +9,11 @@
 html {
   font-family: "Open Sans", sans-serif;
 }
+
+.icon {
+  display: none;
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -16,6 +21,8 @@ html {
   padding: 15px 20px;
   max-width: max-content;
 }
+
+
 .button::after {
   content: "";
   display: block;
@@ -24,4 +31,53 @@ html {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOCIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDI4IDEyIiBmaWxsPSJub25lIj48cGF0aCBpZD0iVmVjdG9yIDIwNyIgZD0iTTAgNkgyNi41TTI2LjUgNkwyMS41IDFNMjYuNSA2TDIxLjUgMTEiIHN0cm9rZT0iIzJFNDg0NSIvPjwvc3ZnPg==");
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.accordion {
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  border: none;
+  outline: none;
+  align-items: center;
+}
+
+.accordion:after {
+  content: '\FF0B';
+  width: 22px;
+  height: 21px;
+  font-size: 21px;
+  line-height: 21px;
+  margin-right: 10px;
+  color: #000;
+}
+
+.accordion-active:after {
+  content: "\2212"; /* Unicode character for "minus" sign (-) */
+}
+
+.panel {
+  display: none;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  .icon {
+      display: block;
+  }
+
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      /* Background color of the mobile menu */
+      position: absolute;
+      top: 60px; /* Adjust as needed to position the dropdown below the header */
+      left: 0;
+      right: 0;
+      z-index: 1;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
 }
