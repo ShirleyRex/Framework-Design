@@ -9,14 +9,14 @@
 </head>
 
 <body class='bg-white-100'>
-    <header class="mb-20 fixed bg-white-100 w-full">
+    <header id="header" class="mb-10 fixed bg-white-100 w-full">
 
         <!-- Logo -->
         <div class=" container mx-auto p-4 flex justify-between items-center">
-            <a href="/" class="font-bold text-green-100">COTTAGE RETREAT</a>
+            <a href="/" class="font-bold text-green-100 logo">COTTAGE RETREAT</a>
 
             <!-- Navigation Links -->
-            <nav id="toggle-menu" class="nav-links">
+            <nav id="toggle-menu" class="nav-links bg-green-100 md:bg-white-100 md:h-fit h-screen">
                 <?php if (has_nav_menu('header-menu')): ?>
                     <?php wp_nav_menu(array(
                         'theme_location' => 'header-menu',
@@ -24,8 +24,9 @@
                         'menu_class' => 'flex font-light text-green-100 gap-6'
                     )); ?>
                 <?php else: ?>
-                    <ul class="md:flex-row flex-col md:flex font-light text-green-100 gap-6">
-                        <li'><a href="#">Nav button 01</a></li>
+                    <ul
+                        class="md:flex-row flex-col md:flex font-light text-white-100 md:text-green-100 gap-6 bg-green-100 md:bg-white-100 md:h-fit h-screen">
+                        <li><a href="#">Nav button 01</a></li>
                         <li><a href="#">Nav button 02</a></li>
                         <li><a href="#">Nav button 03</a></li>
                     </ul>
@@ -33,8 +34,8 @@
                 <?php endif; ?>
             </nav>
 
-            <a href="javascript:void(0);" class="icon md:hidden" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+            <button class="icon md:hidden" onclick="myFunction()">
+                <i id="icon" class="fa fa-bars"></i>
+            </button>
         </div>
     </header>

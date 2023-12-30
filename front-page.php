@@ -5,7 +5,7 @@ get_header();
 require_once get_template_directory() . "/includes/render-fields.php";
 
 ?>
-<main class="pt-48">
+<main class="pt-24 md:pt-48">
     <section class="flex flex-col items-start mb-20">
         <!-- Text Section -->
         <div class="container mx-auto p-4 text-green-100">
@@ -99,63 +99,87 @@ require_once get_template_directory() . "/includes/render-fields.php";
             </div>
 
             <div>
-                <button class='accordion mb-5 md:text-xl text-sm flex items-center gap-20'><span
-                        class='font-light text-sm'>01</span>
-                    <?php echo esc_html($section4_question1) ?>
-                </button>
-                <div class='panel'>
-                <p class='text-sm md:text-2xl mb-5 font-light md:w-3/4 ml-24 leading-6'>Lorem ipsum dolor sit amet consectetur.
-                    Bibendum cras dolor adipiscing odio sapien nunc vitae. Et amet maecenas morbi praesent justo
-                    convallis facilisis phasellus. Feugiat ac pretium augue pharetra adipiscing. In dictum vitae nunc
-                    urna. Tincidunt augue diam amet tincidunt amet. Tellus pharetra nunc etiam laoreet non ultricies a
-                    suspendisse. At.</p>
+                <div class='mb-5 md:text-xl text-sm items-center'>
+                    <div class='flex justify-between'>
+                        <div class='flex items-center gap-5 md:gap-20'>
+                            <span class='font-light text-sm'>01</span>
+                            <h1>
+                                <?php echo esc_html($section4_question1) ?>
+                            </h1>
+                        </div>
+                        <button class='accordion'></button>
+                    </div>
+                    <div class='panel'>
+                        <p class='text-sm md:text-base my-5 font-light md:w-3/4 ml-8 md:ml-24'>Lorem ipsum dolor sit
+                            amet consectetur.
+                            Bibendum cras dolor adipiscing odio sapien nunc vitae. Et amet maecenas morbi praesent justo
+                            convallis facilisis phasellus.
+                        </p>
+                    </div>
                 </div>
                 <hr class='border-white-300 mb-5'>
 
-                <button class='accordion mb-5 md:text-xl text-sm flex items-center gap-20'><span
-                        class='font-light text-sm'>02</span>
-                    <?php echo esc_html($section4_question2) ?>
-                </button>
-                <div class='panel'>
-                <p class='text-sm mb-5 font-light w-3/4 ml-24 leading-6'>Lorem ipsum dolor sit amet consectetur.
-                    Bibendum cras dolor adipiscing odio sapien nunc vitae. Et amet maecenas morbi praesent justo
-                    convallis facilisis phasellus. Feugiat ac pretium augue pharetra adipiscing. In dictum vitae nunc
-                    urna. Tincidunt augue diam amet tincidunt amet. Tellus pharetra nunc etiam laoreet non ultricies a
-                    suspendisse. At.</p>
+
+
+                <div class='mb-5 md:text-xl text-sm items-center'>
+                    <div class='flex justify-between'>
+                        <div class='flex items-center gap-5 md:gap-20'>
+                            <span class='font-light text-sm'>02</span>
+                            <h1>
+                                <?php echo esc_html($section4_question2) ?>
+                            </h1>
+                        </div>
+                        <button class='accordion'></button>
+                    </div>
+                    <div class='panel'>
+                        <p class='text-sm md:text-base my-5 font-light md:w-3/4 ml-8 md:ml-24'>Lorem ipsum dolor sit
+                            amet consectetur.
+                            Bibendum cras dolor adipiscing odio sapien nunc vitae. Et amet maecenas morbi praesent justo
+                            convallis facilisis phasellus.
+                        </p>
+                    </div>
                 </div>
                 <hr class='border-white-300 mb-5'>
 
-                <button class='accordion mb-5 md:text-xl text-sm flex items-center gap-20'><span
-                        class='font-light text-sm'>03</span>
-                    <?php echo esc_html($section4_question3) ?>
-                </button>
-                <div class='panel'>
-                <p class='text-sm mb-5 font-light w-3/4 ml-24 leading-6'>Lorem ipsum dolor sit amet consectetur.
-                    Bibendum cras dolor adipiscing odio sapien nunc vitae. Et amet maecenas morbi praesent justo
-                    convallis facilisis phasellus. Feugiat ac pretium augue pharetra adipiscing. In dictum vitae nunc
-                    urna. Tincidunt augue diam amet tincidunt amet. Tellus pharetra nunc etiam laoreet non ultricies a
-                    suspendisse. At.</p>
+                <div class='mb-5 md:text-xl text-sm items-center'>
+                    <div class='flex justify-between'>
+                        <div class='flex items-center gap-5 md:gap-20'>
+                            <span class='font-light text-sm'>03</span>
+                            <h1>
+                                <?php echo esc_html($section4_question3) ?>
+                            </h1>
+                        </div>
+                        <button class='accordion'></button>
+                    </div>
+                    <div class='panel'>
+                        <p class='text-sm md:text-base my-5 font-light md:w-3/4 ml-8 md:ml-24'>Lorem ipsum dolor sit
+                            amet consectetur.
+                            Bibendum cras dolor adipiscing odio sapien nunc vitae. Et amet maecenas morbi praesent justo
+                            convallis facilisis phasellus.
+                        </p>
+                    </div>
                 </div>
                 <hr class='border-white-300 mb-5'>
 
-                <p class='text-sm mb-5 font-light w-3/4 ml-24 leading-6'>
-                    <?php echo esc_html($section4_answer3) ?>
-                </p>
-
-                <button class='accordion mb-5 md:text-xl text-sm flex items-center gap-20'><span
-                        class='font-light text-sm'>04</span>
-                    <?php echo esc_html($section4_question4) ?>
-                </button>
-                <div class='panel'>
-                <p class='text-sm mb-5 font-light w-3/4 ml-24 leading-6'>Lorem ipsum dolor sit amet consectetur.
-                    Bibendum cras dolor adipiscing odio sapien nunc vitae. Et amet maecenas morbi praesent justo
-                    convallis facilisis phasellus. Feugiat ac pretium augue pharetra adipiscing. In dictum vitae nunc
-                    urna. Tincidunt augue diam amet tincidunt amet. Tellus pharetra nunc etiam laoreet non ultricies a
-                    suspendisse. At.</p>
+                <div class='mb-5 md:text-xl text-sm items-center'>
+                    <div class='flex justify-between'>
+                        <div class='flex items-center gap-5 md:gap-20'>
+                            <span class='font-light text-sm'>04</span>
+                            <h1>
+                                <?php echo esc_html($section4_question4) ?>
+                            </h1>
+                        </div>
+                        <button class='accordion'></button>
+                    </div>
+                    <div class='panel'>
+                        <p class='text-sm md:text-base my-5 font-light md:w-3/4 ml-8 md:ml-24'>Lorem ipsum dolor sit
+                            amet consectetur.
+                            Bibendum cras dolor adipiscing odio sapien nunc vitae. Et amet maecenas morbi praesent justo
+                            convallis facilisis phasellus.
+                        </p>
+                    </div>
                 </div>
-
-                </p>
-                <hr class='border-white-300 mb-10'>
+                <hr class='border-white-300 mb-5'>
 
                 <button type="button"
                     class=" button rounded-full border-2 border-neutral-800 text-xs font-medium text-center">

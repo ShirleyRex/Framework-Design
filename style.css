@@ -22,7 +22,6 @@ html {
   max-width: max-content;
 }
 
-
 .button::after {
   content: "";
   display: block;
@@ -35,21 +34,13 @@ html {
 
 .accordion {
   cursor: pointer;
-  display: flex;
-  width: 100%;
-  border: none;
-  outline: none;
-  align-items: center;
 }
 
 .accordion:after {
-  content: '\FF0B';
-  width: 22px;
-  height: 21px;
-  font-size: 21px;
-  line-height: 21px;
-  margin-right: 10px;
-  color: #000;
+  content: "\FF0B";
+  font-size: 30px;
+  color: #2e4845;
+  font-weight: lighter;
 }
 
 .accordion-active:after {
@@ -63,21 +54,36 @@ html {
 /* Media query for small screens */
 @media screen and (max-width: 768px) {
   .icon {
-      display: block;
+    display: block;
   }
 
   .nav-links {
-      display: none;
-      flex-direction: column;
-      /* Background color of the mobile menu */
-      position: absolute;
-      top: 60px; /* Adjust as needed to position the dropdown below the header */
-      left: 0;
-      right: 0;
-      z-index: 1;
+    display: none;
+    flex-direction: column;
+    /* Background color of the mobile menu */
+    position: absolute;
+    top: 60px; /* Adjust as needed to position the dropdown below the header */
+    left: 0;
+    right: 0;
+    z-index: 1;
   }
 
   .nav-links.active {
-      display: flex;
+    display: flex;
+    margin-top: -5px;
+    padding-inline: 15px;
+    padding-top: 50px;
+  }
+
+  .nav-links.active li {
+    margin-bottom: 20px;
+  }
+  .button {
+    padding: 10px 10px;
+    gap: 25px;
+  }
+  header.active .logo,
+  header.active i {
+    color: white;
   }
 }
