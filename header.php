@@ -25,16 +25,20 @@
                     )); ?>
                 <?php else: ?>
                     <ul
-                        class="md:flex-row flex-col md:flex font-light text-white-100 md:text-green-100 gap-6 bg-green-100 md:bg-white-100 md:h-fit h-screen">
+                        class="md:flex-row flex-col md:flex font-light text-white-100 md:text-green-100 gap-6 bg-green-100 md:bg-white-100 md:h-fit h-screen text-xl md:text-base">
                         <li><a href="#">Nav button 01</a></li>
                         <li><a href="#">Nav button 02</a></li>
                         <li><a href="#">Nav button 03</a></li>
+                        <div class="terms-conditions text-sm">
+                            <li a href="#">Privacy</li>
+                            <li a href="#">Terms & Condition</li>
+                        </div>
                     </ul>
 
                 <?php endif; ?>
             </nav>
 
-            <button class="icon md:hidden" onclick="myFunction()">
+            <button class="icon md:hidden" onclick="toggleMenu()">
                 <i id="icon" class="fa fa-bars"></i>
             </button>
         </div>
